@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import Navbare from "./components/Navbare/navbar";
 
-const Home = () => (
-  <p>
-    home works!
-</p>
-)
-
-export default Home
+export default function Home (){
+  return(
+  <div>
+    <div className="relative">
+        <Navbare />
+      </div>
+      <div className="">Home</div>
+  </div>
+  );
+}
