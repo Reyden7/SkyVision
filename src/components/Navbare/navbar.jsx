@@ -9,37 +9,37 @@ function Navbar() {
     const menuStyles = {
         maxHeight: isOpen ? '200px' : '40px',
         overflow: 'hidden',
-        transition: 'max-height 0.3s ease-in-out'
-        
+        transition: 'max-height 0.3s ease-in-out',
     };
 
     const burgerStyles = {
-        position: 'absolute',  // Utilisez une position absolue pour que l'icône du burger reste en place
-        top: '10px',  // Ajustez la valeur en fonction de votre mise en page
-        left: '20px',  // Ajustez la valeur en fonction de votre mise en page
+        position: 'absolute',
+        top: '10px',
+        left: '20px',
     };
 
     return (
-        <nav className='bg-gray-800 p-4'>
-            <div className='container mx-auto flex justify-between items-center'>
+        <nav className=' bg-neutral-800  color p-4 w-100 font-quicksand'> 
+            <div className=' container w-full flex justify-center  '>
                 <div className='md:hidden lg:hidden xl:hidden' style={burgerStyles}>
-                    <Hamburger toggled={isOpen} toggle={setOpen} />
+                    <Hamburger color="#EEB42C" easing="ease-in" toggled={isOpen} toggle={setOpen} />
+                    
                 </div>
-                <div className='hidden sm:flex space-x-4'>
-                    <Link to="/" className='text-white'>Home</Link>
-                    <Link to="/tools" className='text-white'>Mon matériel</Link>
-                    <Link to="/services" className='text-white'>Services</Link>
-                    <Link to="/about" className='text-white'>A propos</Link>
-                    <Link to="/contact" className='text-white'>Contact</Link>
+                <div  className='hidden sm:flex flex space-x-16 menu1'>
+                    <div className='flex-auto'><Link to="/" className='  xl:text-3xl 2xl:text-3xl 3xl:text-3xl md:text-2xl text-white text-center md:hover:text-amber-400'>Home</Link></div>
+                    <div className='flex-auto'><Link to="/tools" className='xl:text-3xl 2xl:text-3xl 3xl:text-3xl md:text-2xl text-white text-center'>Mon matériel</Link></div>
+                    <div className='flex-auto'><Link to="/services" className=' xl:text-3xl 2xl:text-3xl 3xl:text-3xl md:text-2xl text-white text-center'>Services</Link></div>
+                    <div className='flex-auto'><Link to="/about" className=' xl:text-3xl 2xl:text-3xl 3xl:text-3xl md:text-2xl text-white text-center'>A propos</Link></div>
+                    <div className='flex-auto'><Link to="/contact" className=' xl:text-3xl 2xl:text-3xl 3xl:text-3xl md:text-2xl text-white text-center'>Contact</Link></div>
                 </div>
-                <div className='mx-auto'> {/* Ajout de la classe 'text-center' pour centrer horizontalement les éléments */}
+                <div className=''>
                     <div className='md:hidden lg:hidden xl:hidden' style={menuStyles}>
-                        <div className='text-xl font-skyvision text-white block py-2 text-center'><h1>SkyVision</h1></div>
-                        <Link to="/" className='text-white block py-2 text-center'>Home</Link>
-                        <Link to="/tools" className='block py-2 text-white  text-center'>Mon matériel</Link>
-                        <Link to="/services" className='text-white block py-2  text-center'>Services</Link>
-                        <Link to="/about" className='text-white block py-2  text-center'>A propos</Link>
-                        <Link to="/contact" className='text-white block py-2  text-center'>Contact</Link>
+                        <div className='text-3xl font-skyvision text-white block py-2 text-center text-amber-400'><h1>SkyVision</h1></div>
+                        <Link to="/" className='text-white block py-2 text-center text-amber-200'>Home</Link>
+                        <Link to="/tools" className='block py-2 text-white text-center text-amber-200'>Mon matériel</Link>
+                        <Link to="/services" className='text-white block py-2 text-center text-amber-200'>Services</Link>
+                        <Link to="/about" className='text-white block py-2 text-center text-amber-200'>A propos</Link>
+                        <Link to="/contact" className='text-white block py-2 text-center text-amber-200'>Contact</Link>
                     </div>
                 </div>
             </div>
