@@ -6,6 +6,12 @@ import Hamburger from 'hamburger-react';
 function Navbar() {
     const [isOpen, setOpen] = useState(false);
 
+    const menuStyles = {
+        maxHeight: isOpen ? '200px' : '0',
+        overflow: 'hidden',
+        transition: 'max-height 0.3s ease-in-out',
+    };
+
     return (
         <nav className='bg-gray-800 p-4'>
             <div className='container mx-auto flex justify-between items-center'>
@@ -19,15 +25,13 @@ function Navbar() {
                 </div>
                 <div className='sm:hidden'>
                     <Hamburger toggled={isOpen} toggle={setOpen} />
-                    {isOpen && (
-                        <div className='sm:hidden'>
-                            <Link to="/" className='text-white block py-2'>Home</Link>
-                            <Link to="/tools" className='text-white block py-2'>Mon matériel</Link>
-                            <Link to="/services" className='text-white block py-2'>Services</Link>
-                            <Link to="/about" className='text-white block py-2'>A propos</Link>
-                            <Link to="/contact" className='text-white block py-2'>Contact</Link>
-                        </div>
-                    )}
+                    <div style={menuStyles}>
+                        <Link to="/" className='text-white block py-2'>Home</Link>
+                        <Link to="/tools" className='text-white block py-2'>Mon matériel</Link>
+                        <Link to="/services" className='text-white block py-2'>Services</Link>
+                        <Link to="/about" className='text-white block py-2'>A propos</Link>
+                        <Link to="/contact" className='text-white block py-2'>Contact</Link>
+                    </div>
                 </div>
             </div>
         </nav>
