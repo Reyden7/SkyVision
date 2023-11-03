@@ -3,3 +3,6 @@
     src: url('./font/UrbanJungleDEMO.otf');
 }
 
+body{
+    background: grey;
+}

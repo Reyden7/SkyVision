@@ -7,7 +7,7 @@ export default function Home (){
     <div className="relative">
         <Navbare />
       </div>
-      <div className="">Home</div>
+      <div className=" bg">Home</div>
   </div>
   );
 }
