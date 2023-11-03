@@ -20,6 +20,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
+        skyvision:['Skyvision','sans-serif'],
         sans: ['Open Sans', 'sans-serif'],
         serif: ['Merriweather', 'serif'],
         display: ['Montserrat', 'sans-serif'],

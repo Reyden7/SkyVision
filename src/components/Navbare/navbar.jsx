@@ -34,7 +34,7 @@ function Navbar() {
                 </div>
                 <div className='mx-auto'> {/* Ajout de la classe 'text-center' pour centrer horizontalement les éléments */}
                     <div className='md:hidden lg:hidden xl:hidden' style={menuStyles}>
-                        <div className='text-xl text-white block py-2 text-center'><h1>SkyVision</h1></div>
+                        <div className='text-xl font-skyvision text-white block py-2 text-center'><h1>SkyVision</h1></div>
                         <Link to="/" className='text-white block py-2 text-center'>Home</Link>
                         <Link to="/tools" className='block py-2 text-white  text-center'>Mon matériel</Link>
                         <Link to="/services" className='text-white block py-2  text-center'>Services</Link>
