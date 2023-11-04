@@ -27,8 +27,8 @@ function Navbar() {
         };
     }, []);
 
-    const navbarClass = `bg-${window.innerWidth >= 640 ? (scrolling ? 'neutral-800' : 'transparent') : 'neutral-800'} color p-4 w-full font-quicksand ${
-        window.innerWidth >= 640 ? (scrolling ? 'sm:fixed sm:top-0 sm:z-10 bg-neutral-800 sm:bg-neutral-800 transition-all duration-300 ease-in-out' : 'transition-all duration-300 ease-in-out') : ''
+    const navbarClass = `bg-${window.innerWidth >= 640 ? (scrolling ? 'neutral-800' : 'transparent') : 'neutral-800'} color p-4 w-full font-quicksand  ${
+        window.innerWidth >= 640 ? (scrolling ? 'sm:fixed sm:top-0 sm:z-10 bg-neutral-800  sm:bg-neutral-800 transition-all duration-300 ease-in-out' : 'transition-all duration-300 ease-in-out') : ''
     };`
     
     
@@ -45,7 +45,7 @@ function Navbar() {
         left: '20px',
     };
 
-    const textStyles = `xl:text-2xl 2xl:text-2xl 3xl:text-2xl md:text-2xl ${scrolling ? 'text-white' : 'text-black'} text-center md:hover:text-amber-400 border hover:border-amber-400 border-transparent border-0 hover:border-t-2 hover:border-b-2 p-6 transition duration-300`;
+    const textStyles = `xl:text-xl 2xl:text-xl 3xl:text-xl md:text-2xl ${scrolling ? 'text-white' : 'text-neutral-800'} text-center md:hover:text-amber-400 border hover:border-amber-400 border-transparent border-0 hover:border-t-2 hover:border-b-2 p-4 transition duration-300`;
 
 
     return (
@@ -56,13 +56,13 @@ function Navbar() {
                 </div>
 
                 {/* Logo à gauche de la navbar */}
-                <div className=' font-skyvision text-amber-400 xl:text-5xl ml-20 flex items-center sm:block hidden '>
+                <div className=' font-skyvision text-amber-400 xl:text-2xl ml-52 flex items-center sm:block hidden '>
                     <h1>SkyVision</h1>
                 </div>
 
-                <div className='hidden sm:flex flex space-x-16 mt-2  ml-auto mr-28 '>
+                <div className='hidden sm:flex flex space-x-8  ml-auto mr-28 '>
                     <div className='flex-auto'><Link to="/" className={textStyles}>Home</Link></div>
-                    <div className='flex-auto'><Link to="/tools" className={textStyles}>Mon matériel</Link></div>
+                    <div className='flex-auto'><Link to="/tools" className={textStyles}>Le matériel</Link></div>
                     <div className='flex-auto'><Link to="/services" className={textStyles}>Services</Link></div>
                     <div className='flex-auto'><Link to="/about" className={textStyles}>A propos</Link></div>
                     <div className='flex-auto'><Link to="/contact" className={textStyles}>Contact</Link></div>
@@ -71,7 +71,7 @@ function Navbar() {
                     <div className='md:hidden lg:hidden xl:hidden ' style={menuStyles}>
                         <div className='text-3xl font-skyvision  block py-2 text-center text-amber-400 '><h1>SkyVision</h1></div>
                         <Link to="/" className=' block py-2 text-center text-amber-200'>Home</Link>
-                        <Link to="/tools" className='block py-2  text-center text-amber-200'>Mon matériel</Link>
+                        <Link to="/tools" className='block py-2  text-center text-amber-200'>Le matériel</Link>
                         <Link to= "/services" className='block py-2 text-center text-amber-200'>Services</Link>
                         <Link to="/about" className=' block py-2 text-center text-amber-200'>A propos</Link>
                         <Link to="/contact" className=' block py-2 text-center text-amber-200'>Contact</Link>

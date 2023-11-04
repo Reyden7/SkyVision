@@ -20,6 +20,9 @@ module.exports = {
       '3xl': '2530px',
     },
     extend: {
+      blur: {
+        xs: '2px',
+      },
       fontFamily: {
         skyvision:['Skyvision','sans-serif'],
         sans: ['Open Sans', 'sans-serif'],
