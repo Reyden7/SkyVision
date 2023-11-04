@@ -51,6 +51,12 @@ module.exports = {
         orbitron: ['Orbitron', 'sans-serif'],
         lobster: ['Lobster', 'cursive'],
         greatVibes: ['Great Vibes', 'cursive'],
+        signikaBold:['Signika-Bold', 'sans-serif'],
+        signikaLight:['Signika-Light', 'sans-serif'],
+        signikaMedium:['Signika-Medium', 'sans-serif'],
+        signikaRegular:['Signika-Regular', 'sans-serif'],
+        signikaSemiBold:['Signika-SemiBold', 'sans-serif'],
+        
       }
     },
   },

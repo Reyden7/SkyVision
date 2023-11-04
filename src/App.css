@@ -3,6 +3,31 @@
     src: url('./font/UrbanJungleDEMO.otf');
 }
 
+@font-face {
+    font-family: 'Signika-Bold';
+    src: url('./font/Signika-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Signika-Light';
+    src: url('./font/Signika-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Signika-Medium';
+    src: url('./font/Signika-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Signika-Regular';
+    src: url('./font/Signika-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Signika-SemiBold';
+    src: url('./font/Signika-SemiBold.ttf');
+}
+
 body{
-    background: grey;
+    background: rgb(126, 126, 126);
 }

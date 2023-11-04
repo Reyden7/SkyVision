@@ -28,7 +28,7 @@ function Navbar() {
     }, []);
 
     const navbarClass = `bg-${window.innerWidth >= 640 ? (scrolling ? 'neutral-800' : 'transparent') : 'neutral-800'} color p-4 w-full font-quicksand ${
-        window.innerWidth >= 640 ? (scrolling ? 'sm:fixed sm:top-0 sm:z-10 transition-all duration-300 ease-in-out' : 'transition-all duration-300 ease-in-out') : ''
+        window.innerWidth >= 640 ? (scrolling ? 'sm:fixed sm:top-0 sm:z-10 bg-neutral-800 sm:bg-neutral-800 transition-all duration-300 ease-in-out' : 'transition-all duration-300 ease-in-out') : ''
     };`
     
     
@@ -69,12 +69,12 @@ function Navbar() {
                 </div>
                 <div>
                     <div className='md:hidden lg:hidden xl:hidden ' style={menuStyles}>
-                        <div className='text-3xl font-skyvision text-white block py-2 text-center text-amber-400'><h1>SkyVision</h1></div>
-                        <Link to="/" className='text-white block py-2 text-center text-amber-200'>Home</Link>
-                        <Link to="/tools" className='block py-2 text-white text-center text-amber-200'>Mon matériel</Link>
-                        <Link to= "/services" className='text-white block py-2 text-center text-amber-200'>Services</Link>
-                        <Link to="/about" className='text-white block py-2 text-center text-amber-200'>A propos</Link>
-                        <Link to="/contact" className='text-white block py-2 text-center text-amber-200'>Contact</Link>
+                        <div className='text-3xl font-skyvision  block py-2 text-center text-amber-400 '><h1>SkyVision</h1></div>
+                        <Link to="/" className=' block py-2 text-center text-amber-200'>Home</Link>
+                        <Link to="/tools" className='block py-2  text-center text-amber-200'>Mon matériel</Link>
+                        <Link to= "/services" className='block py-2 text-center text-amber-200'>Services</Link>
+                        <Link to="/about" className=' block py-2 text-center text-amber-200'>A propos</Link>
+                        <Link to="/contact" className=' block py-2 text-center text-amber-200'>Contact</Link>
                     </div>
                 </div>
             </div>
