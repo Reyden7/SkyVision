@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbare from "./components/Navbare/navbar";
+import Formulaire from "./components/formulaireContact/formulaire";
 
 export default function Contact (){
   return(
@@ -7,7 +8,7 @@ export default function Contact (){
     <div className="relative">
         <Navbare />
       </div>
-      <div className="">Contact</div>
+      <div className=""><Formulaire/></div>
   </div>
   
   );
