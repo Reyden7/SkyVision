@@ -1,0 +1,65 @@
+/*pour ecran ordinateur 2xl*/
+.image-container {
+    position: relative;
+    animation: monterDescendre 10s infinite;
+  }
+  
+  @keyframes monterDescendre {
+    0%, 100% {
+      transform: translateY(0);
+      
+    }
+    50% {
+      transform: translateY(-50px); /* Ajustez la valeur pour le déplacement souhaité */
+    }
+  }
+
+  .bgAnim-container {
+    position: relative;
+    animation: monterDescendre 5s infinite;
+  }
+  
+  @keyframes monterDescendre {
+    0%, 100% {
+      transform: translateY(0);
+      
+    }
+    50% {
+      transform: translateY(-40px); /* Ajustez la valeur pour le déplacement souhaité */
+    }
+  }
+
+  /*---------------------------------------------------------*/
+  /*pour ecran smartphone*/
+
+  .image-containerSM {
+    position: relative;
+    animation: monterDescendre 10s infinite;
+  }
+  
+  @keyframes monterDescendre {
+    0%, 100% {
+      transform: translateY(0);
+      
+    }
+    50% {
+      transform: translateY(-50px); /* Ajustez la valeur pour le déplacement souhaité */
+    }
+  }
+
+  .bgAnim-containerSM {
+    position: relative;
+    animation: monterDescendre 5s infinite;
+  }
+  
+  @keyframes monterDescendre {
+    0%, 100% {
+      transform: translateY(0);
+      
+    }
+    50% {
+      transform: translateY(-40px); /* Ajustez la valeur pour le déplacement souhaité */
+    }
+  }
+
+  /*---------------------------------------------------------*/

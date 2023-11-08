@@ -1,0 +1,14 @@
+.image-container {
+    position: relative;
+    animation: monterDescendre 6s infinite;
+  }
+  
+  @keyframes monterDescendre {
+    0%, 100% {
+      transform: translateY(0);
+      
+    }
+    50% {
+      transform: translateY(-5vw); /* Ajustez la valeur pour le déplacement souhaité */
+    }
+  }

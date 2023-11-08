@@ -27,14 +27,14 @@ function Navbar() {
         };
     }, []);
 
-    const navbarClass = `bg-${window.innerWidth >= 640 ? (scrolling ? 'neutral-800' : 'transparent') : 'neutral-800'} color p-4 w-full font-quicksand  ${
-        window.innerWidth >= 640 ? (scrolling ? 'sm:fixed sm:top-0 sm:z-10 bg-neutral-800  sm:bg-neutral-800 transition-all duration-300 ease-in-out' : 'transition-all duration-300 ease-in-out') : ''
+    const navbarClass = `bg-${window.innerWidth >= 640 ? (scrolling ? 'neutral-800' : 'neutral-800 opacity-80 ') : 'neutral-800 '} color p-4 w-full font-quicksand  ${
+        window.innerWidth >= 640 ? (scrolling ? 'sm:fixed sm:top-0 sm:z-10 lg:fixed lg:top-0 lg xl:fixed xl:top-0 xl:z-10:z-10 bg-neutral-800 sm:bg-neutral-800 transition-all duration-300 ease-in-out' : 'transition-all duration-300 ease-in-out') : ''
     };`
     
     
     
     const menuStyles = {
-        maxHeight: isOpen ? '200px' : '40px',
+        maxHeight: isOpen ? '300px' : '40px',
         overflow: 'hidden',
         transition: 'max-height 0.3s ease-in-out',
     };
@@ -45,7 +45,7 @@ function Navbar() {
         left: '20px',
     };
 
-    const textStyles = `xl:text-xl 2xl:text-xl 3xl:text-xl md:text-2xl ${scrolling ? 'text-white' : 'text-neutral-800'} text-center md:hover:text-amber-400 border hover:border-amber-400 border-transparent border-0 hover:border-t-2 hover:border-b-2 p-4 transition duration-300`;
+    const textStyles = ` md:text-sm xl:text-xl 2xl:text-xl 3xl:text-xl  ${scrolling ? 'text-white' : 'text-white'} text-center md:hover:text-amber-400 border hover:border-amber-400 border-transparent border-0 hover:border-t-2 hover:border-b-2 p-4 transition duration-300`;
 
 
     return (
@@ -56,16 +56,16 @@ function Navbar() {
                 </div>
 
                 {/* Logo à gauche de la navbar */}
-                <div className=' font-skyvision text-amber-400 xl:text-2xl ml-52 flex items-center sm:block hidden '>
+                <div className=' font-skyvision text-amber-400 md:text-2xl xl:text-2xl lg:ml-20 xl:ml-56  op flex items-center sm:block hidden'>
                     <h1>SkyVision</h1>
                 </div>
 
-                <div className='hidden sm:flex flex space-x-8  ml-auto mr-28 '>
-                    <div className='flex-auto'><Link to="/" className={textStyles}>Home</Link></div>
-                    <div className='flex-auto'><Link to="/tools" className={textStyles}>Le matériel</Link></div>
-                    <div className='flex-auto'><Link to="/services" className={textStyles}>Services</Link></div>
-                    <div className='flex-auto'><Link to="/about" className={textStyles}>A propos</Link></div>
-                    <div className='flex-auto'><Link to="/contact" className={textStyles}>Contact</Link></div>
+                <div className='hidden  sm:flex flex lg:space-x-8 md:space-x-2 lg:space-x-8 xl:space-x-8 2xl:space-x-20 xl:mr-20  ml-auto mr-0  '>
+                    <div className='flex-auto font-signikaBold'><Link to="/" className={textStyles}>Home</Link></div>
+                    <div className='flex-auto font-signikaBold'><Link to="/tools" className={textStyles}>Le matériel</Link></div>
+                    <div className='flex-auto font-signikaBold'><Link to="/services" className={textStyles}>Services</Link></div>
+                    <div className='flex-auto font-signikaBold'><Link to="/about" className={textStyles}>A propos</Link></div>
+                    <div className='flex-auto font-signikaBold'><Link to="/contact" className={textStyles}>Contact</Link></div>
                 </div>
                 <div>
                     <div className='md:hidden lg:hidden xl:hidden ' style={menuStyles}>
