@@ -9,7 +9,7 @@ import Contact from './Contact';
 import Tools from './Tools';
 import Services from './Services';
 import DetailPage from './components/Prestations/detailsPage';
-import MaterielDetail from './components/matériel/materielDetails';
+
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <Route path="/about" element={<About />} ></Route>
         <Route path="/contact" element={<Contact />} ></Route>
         <Route path="/detailsPage/:id" element={<DetailPage/>}></Route>
-        <Route path="/materielDetails/" element={<MaterielDetail/>}></Route>
+        <Route path="/tools" element={<Tools/>}></Route>
         <Route path="*" element={<Home />} ></Route>
       </Routes>
   );

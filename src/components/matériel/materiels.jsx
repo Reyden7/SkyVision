@@ -10,8 +10,8 @@ function Materiels() {
   return (
     <div>
       <div className='text-center mt-32 text-neutral-800 text-5xl lg:text-6xl font-signikaSemiBold'>Notre matériel</div>
-      <div className='text-center mt-5 text-neutral-800 text-2xl lg:text-2xl font-signikaSemiBold'>
-        <a href="/materielDetails" className="bg-neutral-800 text-amber-400 font-signikaSemiBold px-4 py-1 rounded-full hover:bg-neutral-900 hover:text-amber-500 transition duration-300 ease-in-out">
+      <div className='text-center mt-6 mb-12 text-neutral-800 text-2xl lg:text-2xl font-signikaSemiBold'>
+        <a href="/tools" className="bg-neutral-800 text-amber-400 font-signikaSemiBold  px-4 py-4 rounded-full hover:bg-neutral-900 hover:text-amber-500 transition duration-300 ease-in-out">
             En savoir plus
         </a>
     </div>
