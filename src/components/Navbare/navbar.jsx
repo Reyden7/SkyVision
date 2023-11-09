@@ -57,7 +57,7 @@ function Navbar() {
 
                 {/* Logo à gauche de la navbar */}
                 <div className=' font-skyvision text-amber-400 md:text-2xl xl:text-2xl lg:ml-20 xl:ml-56  op flex items-center sm:block hidden'>
-                    <img className='2xl:w-36 2xl:h-12 md:w-36 md:h-12' src={logo} />
+                    Skyvision
                 </div>
 
                 <div className='hidden  sm:flex flex lg:space-x-8 md:space-x-2 lg:space-x-8 xl:space-x-8 2xl:space-x-20 xl:mr-20  ml-auto mr-0  '>
@@ -69,7 +69,7 @@ function Navbar() {
                 </div>
                 <div>
                     <div className='md:hidden lg:hidden xl:hidden ' style={menuStyles}>
-                        <div className='text-3xl font-skyvision  block py-2 text-center text-amber-400 '><img className='w-40 h-10 -mt-3 ' src={logo} /></div>
+                        <div className='text-3xl font-skyvision  block py-2 text-center text-amber-400 '>Skyvision</div>
                         <Link to="/" className=' block py-2 text-center text-amber-200'>Home</Link>
                         <Link to="/tools" className='block py-2  text-center text-amber-200'>Le matériel</Link>
                         <Link to= "/services" className='block py-2 text-center text-amber-200'>Services</Link>
