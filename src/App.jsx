@@ -6,7 +6,6 @@ import './App.css';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
-import NotFound from './NotFound';
 import Tools from './Tools';
 import Services from './Services';
 import DetailPage from './components/Prestations/detailsPage';

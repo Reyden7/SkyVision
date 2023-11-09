@@ -5,7 +5,6 @@ import './Home.css';
 import Prestations from './components/Prestations/prestation'
 import Materiel from './components/matériel/materiels'
 import Footer from './components/bandeau/bandeau'
-import arrow from './img/scroll.png';
 
 export default function Home (){
   const videoRef = useRef(null);
@@ -44,6 +43,7 @@ export default function Home (){
               height="1080" // Spécifiez la hauteur de la vidéo
               autoPlay
               loop
+              muted
               
               // Ajoutez une image de poster si nécessaire
             >
