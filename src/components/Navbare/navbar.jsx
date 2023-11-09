@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './navbar.css';
 import { Link } from 'react-router-dom';
 import Hamburger from 'hamburger-react';
-import logo from '../../img/logo.png'
+import logo from '../../img/skyvisionlogo.jpg'
 
 function Navbar() {
     const [isOpen, setOpen] = useState(false);
@@ -57,8 +57,8 @@ function Navbar() {
 
                 {/* Logo à gauche de la navbar */}
                 <div className=' font-skyvision text-amber-400 md:text-2xl xl:text-2xl lg:ml-20 xl:ml-56  op flex items-center sm:block hidden'>
-                    <img className=' 2xl:w-46 2xl:h-12 transform 2xl:scale-150' src={logo}/>
-                                    </div>
+                    <h1>SkyVision</h1>
+                </div>
 
                 <div className='hidden  sm:flex flex lg:space-x-8 md:space-x-2 lg:space-x-8 xl:space-x-8 2xl:space-x-20 xl:mr-20  ml-auto mr-0  '>
                     <div className='flex-auto font-signikaBold'><Link to="/" className={textStyles}>Home</Link></div>
