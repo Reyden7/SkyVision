@@ -1,13 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.627caf46.css",
-    "main.js": "/static/js/main.78cc2483.js",
+    "main.css": "/static/css/main.c85eafcf.css",
+    "main.js": "/static/js/main.c09ee74b.js",
+    "static/media/videoSite.mp4": "/static/media/videoSite.a539c8c50683889a22c6.mp4",
+    "static/media/pilote.png": "/static/media/pilote.4911fa0c486fc844ef0b.png",
+    "static/media/logo.png": "/static/media/logo.c76c49ee2d7ef524dd78.png",
+    "static/media/s2.jpg": "/static/media/s2.2c8b6b242e10edee86c8.jpg",
+    "static/media/Signika-Bold.ttf": "/static/media/Signika-Bold.b9e6dcdf88ccce13b4aa.ttf",
+    "static/media/Signika-SemiBold.ttf": "/static/media/Signika-SemiBold.30a0b1c74fe0f02dba5d.ttf",
+    "static/media/Signika-Regular.ttf": "/static/media/Signika-Regular.5ea0e07d3afddf2b9c76.ttf",
+    "static/media/Signika-Medium.ttf": "/static/media/Signika-Medium.c8ddbbffb80e3d292db4.ttf",
+    "static/media/Signika-Light.ttf": "/static/media/Signika-Light.903ff144b061d0370484.ttf",
+    "static/media/UrbanJungleDEMO.otf": "/static/media/UrbanJungleDEMO.b6c2d200dedd8c18d02e.otf",
+    "static/media/s3.jpg": "/static/media/s3.223708f41e85cd667920.jpg",
+    "static/media/v2.png": "/static/media/v2.db2e8eb0057db900911c.png",
+    "static/media/drone.png": "/static/media/drone.45c9a81b0fb0fca7946b.png",
+    "static/media/djiremote.png": "/static/media/djiremote.402c86112d97100cc3a7.png",
+    "static/media/s4.jpg": "/static/media/s4.c7af5e44232d7eb162da.jpg",
+    "static/media/s5.jpg": "/static/media/s5.35f05039ac14014d1f9d.jpg",
+    "static/media/avata.png": "/static/media/avata.05294ffadcbc20afa4d6.png",
+    "static/media/djifpv.png": "/static/media/djifpv.c3b4196b1010e03623fd.png",
+    "static/media/fpv.jpg": "/static/media/fpv.06d0d40db9c037924d79.jpg",
+    "static/media/mavic-2-pro-12.jpg": "/static/media/mavic-2-pro-12.cab0c764bd95420e12d1.jpg",
     "index.html": "/index.html",
-    "main.627caf46.css.map": "/static/css/main.627caf46.css.map",
-    "main.78cc2483.js.map": "/static/js/main.78cc2483.js.map"
+    "main.c85eafcf.css.map": "/static/css/main.c85eafcf.css.map",
+    "main.c09ee74b.js.map": "/static/js/main.c09ee74b.js.map"
   },
   "entrypoints": [
-    "static/css/main.627caf46.css",
-    "static/js/main.78cc2483.js"
+    "static/css/main.c85eafcf.css",
+    "static/js/main.c09ee74b.js"
   ]
 }
