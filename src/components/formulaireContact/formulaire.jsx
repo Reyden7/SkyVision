@@ -5,7 +5,7 @@ import img from '../../img/djifpv.png';
 
 function Formulaire() {
   const [isCaptchaVerified, setCaptchaVerified] = useState(false);
-
+  
   const handleCaptchaVerify = (token) => {
     if (token) {
       setCaptchaVerified(true);
@@ -98,7 +98,7 @@ function Formulaire() {
                 </div>
                 <div className="mt-4 col-span-2 text-center z-0">
                   <ReCAPTCHA
-                    sitekey="6Ld46_koAAAAAJwq7BFbsaN7UWpooijbe5IowNXU"
+                    sitekey="6LcaqAopAAAAAIitumzXQ_4Q7J8AwaBRXun_7OkM"
                     onChange={handleCaptchaVerify}
                   />
                   <button
