@@ -14,15 +14,37 @@ function Formulaire() {
     }
   };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
+
     if (isCaptchaVerified) {
-      // Effectuer l'envoi du formulaire ici
-      alert('Formulaire soumis avec succès');
+      const nom = document.getElementById('nom').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      try {
+        const response = await fetch('http://localhost:3001/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ nom, email, message }),
+        });
+
+        if (response.ok) {
+          alert('Formulaire soumis avec succès');
+        } else {
+          alert('Erreur lors de la soumission du formulaire');
+        }
+      } catch (error) {
+        console.error('Erreur réseau', error);
+        alert('Erreur réseau lors de la soumission du formulaire');
+      }
     } else {
       alert('Veuillez vérifier le CAPTCHA.');
     }
   };
+
 
   return (
     <div className="bg-neutral-900 text-neutral-100 h-screen">
