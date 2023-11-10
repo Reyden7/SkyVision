@@ -1,16 +1,16 @@
 // backend/server.js
 
-const express = require('express');
-const nodemailer = require('nodemailer');
-const bodyParser = require('body-parser');
-const fetch = require('node-fetch');
+import express from 'express';
+import nodemailer from 'nodemailer';
+import bodyParser from 'body-parser';
+import fetch from 'node-fetch';
 const { urlencoded, json } = bodyParser;
 
 const app = express();
 
 app.use(bodyParser.json());
 
-const recaptchaSecretKey = 'VOTRE_CLE_SECRETE_RECAPTCHA'; // Remplacez par votre clé secrète reCAPTCHA
+const recaptchaSecretKey = '6LcaqAopAAAAAK_au4xIFLzKjV3xMRvmcBlDZfl6'; // Remplacez par votre clé secrète reCAPTCHA
 
 app.post('/send-email', async (req, res) => {
   const { nom, email, message, recaptchaToken } = req.body;
