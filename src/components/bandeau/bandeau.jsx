@@ -10,14 +10,14 @@ function Footer() {
       
       <div className="sm:col-span-1 sm:border-r  sm:border-amber-400  pr-4 md:text-lg">
         <div style={{ userSelect: "none" }}>
-        <FontAwesomeIcon icon={faEnvelope} bounce style={{color: "#fbb623",}} /> sky&#46;vision&#46;fpv&#64;gmail&#46;com
+        <FontAwesomeIcon icon={faEnvelope}  style={{color: "#fbb623",}} /> sky&#46;vision&#46;fpv&#64;gmail&#46;com
         </div>
       </div>
 
       
       <div className="sm:col-span-1 sm:border-r sm:border-amber-400  pr-4">
         <div style={{ userSelect: "none" }}>
-        <FontAwesomeIcon icon={faPhone} fade style={{color: "#ffca38",}} /> 06&#46;03&#46;50&#46;99&#46;79
+        <FontAwesomeIcon icon={faPhone} style={{color: "#ffca38",}} /> 06&#46;03&#46;50&#46;99&#46;79
         </div>
       </div>
 
