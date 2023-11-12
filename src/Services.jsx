@@ -34,13 +34,13 @@ export default function Services (){
     <div className="mt-20 md:mt-10 lg:mt-20 xl:mt-24 2xl:mt-24 3xl:mt-24  ">
     <div className="m-2">
     <div className="container 2xl:-mt-56  3xl:mt-96  space-x-2 2xl:w-full 3xl:w-full 2xl:h-screen 3xl:h-auto    md:w-full md:mx-auto md:p-2  flex 2xl:space-x-96 md:space-x-20   justify-center transform 2xl:scale-50 3xl:scale-100 3xl:space-x-40 ">
-      <div className="md:w-2/5 2xl:w-2/5 3xl:4/5   h-full w-1/2 2xl:pl-20 2xl:pr-20 pl-5 pr-5 3xl:py-24  bg-neutral-800 rounded-3xl bgAnim-container shadow-2xl shadow-black  "> 
+      <div className="md:w-2/5 2xl:w-2/5 3xl:4/5   h-full xs:w-1/2 w-2/5 2xl:pl-20 2xl:pr-20 pl-5 pr-5 3xl:py-24  bg-neutral-800 rounded-3xl bgAnim-container shadow-2xl shadow-black  "> 
         <img className="w-full rounded-3xl 2xl:-mt-20 transform  shadow-2xl shadow-black image-container  " src={img1} />
         <div className=" mt-8 text-center text-amber-400  md:text-5xl 2xl:text-5xl text-xl font-signikaBold 2xl:pt-5">Les drones stabilisé</div>
         <div className="mt-8 text-center text-neutral-200 2xl:text-4xl md:text-2xl text-xs lg:text-lg xl:text-xl font-signikaLight  ">Envie de plan continu, linéaire, en marche avant ou arrière ? Alors choisisez les drones stabilisé</div>
         <div className="mt-8 text-center text-neutral-200 2xl:text-4xl mt-2 md:text-2xl text-xs lg:text-lg xl:text-xl pb-5 2xl:mt-5 font-signikaLight ">Les drones stabilisés redéfinissent la capture aérienne en offrant une stabilité inébranlable et une qualité d'image exceptionnelle.</div>
       </div>
-      <div className="md:w-2/5 2xl:mb-36 mb-20 2xl:w-2/5 w-1/2  pl-5 pr-5 2xl:mt-20 2xl:pl-20 2xl:pr-20   bg-neutral-800 rounded-3xl bgAnim-container shadow-2xl shadow-black ">
+      <div className="md:w-2/5 2xl:mb-36 mb-20 2xl:w-2/5 xs:w-1/2 w-2/5 pl-5 pr-5 2xl:mt-20 2xl:pl-20 2xl:pr-20   bg-neutral-800 rounded-3xl bgAnim-container shadow-2xl shadow-black ">
         <img className="w-full rounded-3xl 2xl:-mt-20  shadow-2xl shadow-black image-container  " src={img2} />
         <div className="mt-8 text-center text-amber-400 2xl:text-5xl md:text-5xl font-signikaBold 2xl:pt-5 text-xl">Les drones FPV</div>
         <div className="mt-8 text-center text-neutral-200 2xl:text-4xl md:text-2xl lg:text-lg  text-xs xl:text-xl pb-5 font-signikaLight ">Nos vidéos FPV offrent une expérience immersive et dynamique, capturent des séquences plus engageantes et créent des prises de vue dynamiques et uniques, surpassant les vidéos stabilisées traditionnelles.</div>
@@ -65,7 +65,7 @@ export default function Services (){
           
         </div>
       </div>
-      <div className="text-center w-full "> <Footer/></div>
+      <div className="text-center w-full mt-10 "> <Footer/></div>
         
      
     </div>
