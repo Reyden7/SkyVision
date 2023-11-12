@@ -38,7 +38,7 @@ export default function Home (){
         
             <video
             ref={videoRef}
-              className=" w-full h-auto -mt-5 z-1 object-cover inset-0 brightness-50 md:mt-56 2xl:mt-52 3xl:-mt-32  "
+              className=" w-full h-auto -mt-5 z-1 object-cover inset-0 brightness-50 md:mt-56 2xl:mt-52 3xl:-mt-32 hidden 2xl:block md:block "
               width="1920" // Spécifiez la largeur de la vidéo
               height="1080" // Spécifiez la hauteur de la vidéo
               autoPlay
