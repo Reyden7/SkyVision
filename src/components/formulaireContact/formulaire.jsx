@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import './formulaire.css';
 import ReCAPTCHA from 'react-google-recaptcha';
+import emailjs from '@emailjs/browser';
 import img from '../../img/djifpv.png';
 import Footer from '../bandeau/bandeau';
 import './formulaire.css'
 
 function Formulaire() {
   const [isCaptchaVerified, setCaptchaVerified] = useState(false);
-  
+
   const handleCaptchaVerify = (token) => {
     if (token) {
       setCaptchaVerified(true);
@@ -20,33 +21,23 @@ function Formulaire() {
     e.preventDefault();
 
     if (isCaptchaVerified) {
-      const nom = document.getElementById('nom').value;
-      const email = document.getElementById('email').value;
+      const user_name = document.getElementById('user_name').value;
+      const user_email = document.getElementById('user_email').value;
       const message = document.getElementById('message').value;
 
       try {
-        const response = await fetch('http://localhost:3001/send-email', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ nom, email, message }),
-        });
-
-        if (response.ok) {
-          alert('Formulaire soumis avec succès');
-        } else {
-          alert('Erreur lors de la soumission du formulaire');
-        }
+        await emailjs.send('service_6obyt2j', 'template_10yzwg9', {user_name, user_email, message}, 'KkUUG4r1_kd-GNXYA');
+        alert('Formulaire soumis avec succès');
+        console.log(user_name, user_email, message);
+       
       } catch (error) {
-        console.error('Erreur réseau', error);
-        alert('Erreur réseau lors de la soumission du formulaire');
+        console.error('Erreur lors de l\'envoi du formulaire par e-mail', error);
+        alert('Erreur lors de la soumission du formulaire');
       }
     } else {
       alert('Veuillez vérifier le CAPTCHA.');
     }
   };
-
 
   return (
     <div className="bg-neutral-900 text-neutral-100 container pb-96 ">
@@ -68,22 +59,24 @@ function Formulaire() {
             <form onSubmit={handleFormSubmit}>
               <div className="grid  grid-cols-2 gap-4 font-signikaSemiBold">
                 <div className="mt-4 z-0 opacity-1">
-                  <label htmlFor="nom" className="block text-2xl text-amber-400 font-semibold">
+                  <label htmlFor="user_name" className="block text-2xl text-amber-400 font-semibold">
                     Nom
                   </label>
                   <input
                     type="text"
-                    id="nom"
+                    id="user_name"
+                    name="user_name"
                     className="w-full border text-xl text-neutral-800 border-neutral-500 rounded p-2 formulaire-input"
                   />
                 </div>
                 <div className="mt-4 z-0">
-                  <label htmlFor="email" className="block text-2xl text-amber-400 font-semibold">
+                  <label htmlFor="user_email" className="block text-2xl text-amber-400 font-semibold">
                     Email
                   </label>
                   <input
-                    type="text"
-                    id="email"
+                    type="email"
+                    id="user_email"
+                    name="user_email"
                     className="w-full border text-xl text-neutral-800 border-neutral-500 rounded p-2 formulaire-input"
                   />
                 </div>
@@ -96,6 +89,7 @@ function Formulaire() {
                     id="message"
                     className="w-full border text-neutral-800 text-xl border-neutral-500 rounded p-2 formulaire-input"
                     rows="4"
+                    name="message"
                   ></textarea>
                 </div>
                 <div className=" mt-4 col-span-2 text-center z-0">
