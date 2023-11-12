@@ -52,7 +52,7 @@ export default function Home (){
             Votre navigateur ne supporte pas la lecture de vidéos.
             </video>
         </div>
-        <div className="hidden md:block lg:block 2xl:block 3xl:block container absolute z-10 md:top-72 lg:top-96 xl:top-1/4 2xl:top-3/4 3xl:top-1/4 3xl:-mt-52 2xl:mt-24 w-full transform  ">
+        <div className="hidden md:block lg:block xl:block 2xl:block 3xl:block container absolute z-10 md:top-72 lg:top-96 xl:top-3/4 2xl:top-3/4 3xl:top-1/4 3xl:-mt-52 2xl:mt-24 w-full transform  ">
           <div className=" text-amber-400   font-signikaBold 2xl:text-xl mx-auto text-center transform ">SCROLL</div>
           <div className="arrow">
             <span></span>
