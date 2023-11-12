@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './formulaire.css';
 import ReCAPTCHA from 'react-google-recaptcha';
 import img from '../../img/djifpv.png';
+import Footer from '../bandeau/bandeau';
+import './formulaire.css'
 
 function Formulaire() {
   const [isCaptchaVerified, setCaptchaVerified] = useState(false);
@@ -47,22 +49,22 @@ function Formulaire() {
 
 
   return (
-    <div className="bg-neutral-900 text-neutral-100 h-screen">
-      <div className="flex flex-col 2xl:flex-row justify-center ml-10 mr-10">
+    <div className="bg-neutral-900 text-neutral-100 container pb-96 ">
+      <div className="flex flex-col 2xl:flex-row lg:flex-row  justify-center  ">
         {/* Partie texte */}
-        <div className="lg:w-1/2 2xl:w-1/2 md:w-full z-10">
-          <h2 className="text-4xl 2xl:text-6xl font-signikaSemiBold mt-20">
+        <div className="lg:w-1/2 2xl:w-1/2 md:w-1/2 xl:w-1/2  z-10">
+          <h2 className=" pl-10 text-2xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-signikaSemiBold mt-20">
             Notre travail vous intéresse ?
           </h2>
-          <p className="text-lg mt-4 ml-10 mr-10">
+          <p className=" pl-10 text-lg mt-4 ml-10 mr-10">
             Besoin d'un devis ? <br/> des questions ?<br/> des commentaires ? <br/><br/>
             Votre avis nous intéresse.
           </p>
         </div>
         {/* Partie formulaire */}
-        <img className='absolute 2xl:mt-28 lg:-mt-56 md:ml-40 md:-mt-40 lg:ml-96 2xl:ml-12 z-1 transform 3xl:scale-150 2xl:scale-150 md:scale-125 lg:scale-150' src={img} alt="Dji fpv" />
-        <div className="2xl:w-1/2 3xl:w-1/2 md:w-full 2xl:ml-10 2xl:mr-10 3xl:mt-52 mt-4 z-0 3xl:-ml-96">
-          <div className="bg-neutral-800 bg-opacity-80 p-8 rounded-md  shadow-md 2xl:mt-48 lg:mt-0  z-1 formulaire-card">
+        <img className='absolute 2xl:mt-28 lg:mt-28 md:ml-40 md:-mt-40  2xl:ml-12 z-1 transform 3xl:scale-150 2xl:scale-150 md:scale-125 lg:scale-150' src={img} alt="Dji fpv" />
+        <div className="2xl:w-1/2 lg:w-full lg:mr-10  3xl:w-1/2 md:w-full 2xl:ml-10 2xl:mr-10 3xl:mt-52 mt-4 z-0 3xl:-ml-96 px-5">
+          <div className="bg-neutral-800 bg-opacity-80 p-8 rounded-md  shadow-md mt-10 2xl:mt-48 lg:mt-48  z-1 formulaire-card">
             <form onSubmit={handleFormSubmit}>
               <div className="grid  grid-cols-2 gap-4 font-signikaSemiBold">
                 <div className="mt-4 z-0 opacity-1">
@@ -96,14 +98,15 @@ function Formulaire() {
                     rows="4"
                   ></textarea>
                 </div>
-                <div className="mt-4 col-span-2 text-center z-0">
+                <div className=" mt-4 col-span-2 text-center z-0">
                   <ReCAPTCHA
-                    sitekey="6LcaqAopAAAAAIitumzXQ_4Q7J8AwaBRXun_7OkM"
+                  className='md:block transform scale-50 md:scale-100 '
+                    sitekey="6LeIpAwpAAAAAHB4EsTmZ633r9YPDd7hwU6SOWDV"
                     onChange={handleCaptchaVerify}
                   />
                   <button
                     type="submit"
-                    className="text-2xl z-0 bg-amber-400 text-neutral-800 font-semibold rounded-full px-4 py-2 hover:bg-amber-500"
+                    className="mt-10 text-2xl z-0 bg-amber-400 text-neutral-800 font-semibold rounded-full px-4 py-2 hover:bg-amber-500"
                   >
                     Envoyer
                   </button>
@@ -113,6 +116,7 @@ function Formulaire() {
           </div>
         </div>
       </div>
+      <div className=' w-full fixed  bottom-0 text-center'><Footer/></div>
     </div>
   );
 }

@@ -48,7 +48,7 @@ function Prestations() {
   return (
     <div className=''>
       <div className='text-center text-neutral-800 text-5xl lg:text-6xl font-signikaSemiBold 3xl:text-9xl'>Nos prestations</div>
-      <div className='mt-8 text-center text-neutral-500 lg:text-xl font-signikaSemiBold italic'>Que ce soit de la réalisation basique à avancée, en passant par la postProduction notre équipe le fera avec passion</div>
+      <div className='mt-8 text-center text-neutral-500 text-md md:text-md lg:text-lg lg:text-xl xl:text-xl  font-signikaSemiBold italic'>Que ce soit de la réalisation basique à avancée, en passant par la postProduction notre équipe le fera avec passion</div>
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-4 md:gap-4 lg:gap-2 xl:gap-8 ml-2 mr-5 mt-16">
         {cardsData.map((card) => (
           <div key={card.id}>

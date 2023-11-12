@@ -11,10 +11,10 @@ const Card = ({ title, imageUrl, price, id }) => {
         />
       </div>
       <div className="absolute inset-0  flex flex-col text-center  items-center text-white">
-        <h3 className=" text-xl mt-5 lg:-mt-5 2xl:mt-5 md:text-3xl md:mt-10 lg:text-2xl 2xl:text-3xl lg:mt-2 3xl:mt-20 3xl:text-5xl   font-signikaMedium  text-amber-400 sm:p-10 p-2">{title}</h3>
-        <a href={`/detailsPage/${id}`} className="text-amber-200 underline hover:text-amber-400 block text-xl mt-5 md:text-3xl md:mt-5 lg:text-xl lg:-mt-10 xl:mt-5 3xl:text-2xl">Détail</a>
+        <h3 className=" text-xl mt-5 lg:-mt-5 2xl:mt-5 md:text-3xl md:mt-10 lg:text-2xl 2xl:text-3xl lg:-mt-2 3xl:mt-20 3xl:text-5xl xl:text-3xl   font-signikaMedium  text-amber-400 sm:p-10 p-2">{title}</h3>
+        <a href={`/detailsPage/${id}`} className="text-amber-200 underline hover:text-amber-400 block text-xl mt-5 md:text-3xl md:mt-5 lg:text-xl lg:-mt-10 xl:mt-5 3xl:text-2xl xl:-mt-5 3xl:text-4xl 3xl:mt-5">Détail</a>
        
-        <div className="text-xl mt-2 md:text-3xl md:mt-10 lg:text-3xl lg:mt-10 3xl:mt-20 3xl:text-5xlfont-semibold text-amber-500 mb-4">{price}</div>
+        <div className="text-xl mt-2 md:text-3xl md:mt-10 lg:text-3xl lg:mt-10 3xl:mt-20 3xl:text-5xl font-semibold text-amber-500 mb-4 xl:mt-2 3xl:text-6xl 3xl:mt-10">{price}</div>
       </div>
     </div>
   );
