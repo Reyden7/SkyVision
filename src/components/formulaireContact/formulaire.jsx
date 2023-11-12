@@ -5,6 +5,8 @@ import emailjs from '@emailjs/browser';
 import img from '../../img/djifpv.png';
 import Footer from '../bandeau/bandeau';
 import './formulaire.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Formulaire() {
   const [isCaptchaVerified, setCaptchaVerified] = useState(false);
@@ -16,6 +18,7 @@ function Formulaire() {
       setCaptchaVerified(false);
     }
   };
+  
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -27,12 +30,31 @@ function Formulaire() {
 
       try {
         await emailjs.send('service_6obyt2j', 'template_10yzwg9', {user_name, user_email, message}, 'KkUUG4r1_kd-GNXYA');
-        alert('Formulaire soumis avec succès');
+        
+        toast.success('Message envoyé !', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          progress: undefined,
+          theme: "dark",
+          });
         console.log(user_name, user_email, message);
        
       } catch (error) {
         console.error('Erreur lors de l\'envoi du formulaire par e-mail', error);
-        alert('Erreur lors de la soumission du formulaire');
+        toast.error('Une erreur est survenue lors de l envoie', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          progress: undefined,
+          theme: "colored",
+          });
       }
     } else {
       alert('Veuillez vérifier le CAPTCHA.');
@@ -109,7 +131,7 @@ function Formulaire() {
             </form>
           </div>
         </div>
-      </div>
+      </div><ToastContainer />
       <div className=' w-full fixed  bottom-0 text-center'><Footer/></div>
     </div>
   );
