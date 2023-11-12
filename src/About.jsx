@@ -11,7 +11,7 @@ export default function About (){
     <div className="relative">
         <Navbare />
       </div>
-      <div className="w-40 md:w-60 lg:w-80 xl:w-96 2xl:w-80   2xl:block absolute right-0 2xl:mr-12 -mr-4 transform 2xl:scale-125 scale-90  2xl:mt-20 mt-4"><img className=" image-container-drone" src={drone}/></div>
+      <div className="w-40 md:w-60 lg:w-80 xl:w-96 2xl:w-80   2xl:block absolute right-0 2xl:mr-12 -mr-2 transform 2xl:scale-125 scale-90  2xl:mt-20 mt-4"><img className=" image-container-drone" src={drone}/></div>
       <div className="container mx-auto flex flex-col 2xl:w-1/2 w-5/6  2xl:h-auto  px-10 pt-10 pb-20 mt-10 bg-neutral-800 bg-opacity-80 center rounded-3xl border-4 border-neutral-500 2xl:mb-20 mb-40  ">
         
           <div className=" mt-5 mb-10 text-center text-neutral-200 text-3xl md:text-5xl lg:text-5xl font-signikaSemiBold">Qui sommes nous ?</div>
