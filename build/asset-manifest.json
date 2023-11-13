@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1df9eeb1.css",
-    "main.js": "/static/js/main.a0441876.js",
+    "main.css": "/static/css/main.17c0e759.css",
+    "main.js": "/static/js/main.e7587a13.js",
     "static/media/videoSite.mp4": "/static/media/videoSite.a539c8c50683889a22c6.mp4",
     "static/media/pilote.png": "/static/media/pilote.4911fa0c486fc844ef0b.png",
     "static/media/s2.jpg": "/static/media/s2.2c8b6b242e10edee86c8.jpg",
@@ -23,11 +23,11 @@
     "static/media/fpv.jpg": "/static/media/fpv.06d0d40db9c037924d79.jpg",
     "static/media/mavic-2-pro-12.jpg": "/static/media/mavic-2-pro-12.cab0c764bd95420e12d1.jpg",
     "index.html": "/index.html",
-    "main.1df9eeb1.css.map": "/static/css/main.1df9eeb1.css.map",
-    "main.a0441876.js.map": "/static/js/main.a0441876.js.map"
+    "main.17c0e759.css.map": "/static/css/main.17c0e759.css.map",
+    "main.e7587a13.js.map": "/static/js/main.e7587a13.js.map"
   },
   "entrypoints": [
-    "static/css/main.1df9eeb1.css",
-    "static/js/main.a0441876.js"
+    "static/css/main.17c0e759.css",
+    "static/js/main.e7587a13.js"
   ]
 }

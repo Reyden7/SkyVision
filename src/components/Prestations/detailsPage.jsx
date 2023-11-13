@@ -58,7 +58,7 @@ const element = elements.find((elem) => elem.id === id);
               </a></div>
           </div>
         </div>
-        <div className='absolute right-0 transform scale-100 -scale-x-100  w-2xl bottom-0'>
+        <div className='absolute right-0 transform scale-50 -scale-x-50 md:scale-100 md:-scale-x-100 lg:scale-100 lg:-scale-x-100  w-2xl bottom-0'>
             <img src={img2} className='w-96' />
         </div>
 
