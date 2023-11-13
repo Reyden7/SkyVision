@@ -11,8 +11,11 @@ import Services from './Services';
 import DetailPage from './components/Prestations/detailsPage';
 
 
+
+
 function App() {
   return (
+    
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/tools" element={<Tools />} ></Route>
@@ -23,6 +26,7 @@ function App() {
         <Route path="/tools" element={<Tools/>}></Route>
         <Route path="*" element={<Home />} ></Route>
       </Routes>
+    
   );
 }
 

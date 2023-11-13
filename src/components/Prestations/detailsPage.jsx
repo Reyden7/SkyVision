@@ -43,7 +43,7 @@ const DetailPage = () => {
 const element = elements.find((elem) => elem.id === id);
 
   return (
-    <div>
+    <div className=""> 
         <Navbar/>
         <div className='absolute transform -scale-50 scale-y-50 2xl:-scale-x-50 2xl:scale-y-50  2xl:w-2xl w-xl left-0 2xl:-mt-20 2xl:-ml-72 -ml-20 mt-10 w-60  '><img className='image-container 2xl:w-full w-96' src={img1}/></div>
         <div className=' w-full mt-10  '>
@@ -58,7 +58,7 @@ const element = elements.find((elem) => elem.id === id);
               </a></div>
           </div>
         </div>
-        <div className='absolute right-0 transform scale-50 -scale-x-50 md:scale-100 md:-scale-x-100 lg:scale-100 lg:-scale-x-100  w-2xl bottom-0'>
+        <div className='absolute transform scale-50 -scale-x-50 md:scale-100 md:-scale-x-100 lg:scale-100 lg:-scale-x-100  w-2xl bottom-0 right-0'>
             <img src={img2} className='w-96' />
         </div>
 

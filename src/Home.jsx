@@ -22,7 +22,7 @@ export default function Home (){
 
 
   return(
-  <div>
+  <div className="">
     <div className="relative z-20">
         <Navbare />
       </div>

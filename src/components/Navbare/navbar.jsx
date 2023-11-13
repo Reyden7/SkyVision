@@ -27,7 +27,7 @@ function Navbar() {
         };
     }, []);
 
-    const navbarClass = `bg-${window.innerWidth >= 640 ? (scrolling ? 'neutral-800' : 'neutral-800 opacity-80 ') : 'neutral-800 '} color p-4 w-full font-quicksand  ${
+    const navbarClass = `bg-${window.innerWidth >= 640 ? (scrolling ? 'neutral-800' : 'neutral-800 opacity-80 ') : 'neutral-800 '} color p-4 w-full flex items-center justify-center font-quicksand  ${
         window.innerWidth >= 640 ? (scrolling ? 'sm:fixed sm:top-0 sm:z-10 lg:fixed lg:top-0 lg xl:fixed xl:top-0 xl:z-10:z-10 bg-neutral-800 sm:bg-neutral-800 transition-all duration-300 ease-in-out' : 'transition-all duration-300 ease-in-out') : ''
     };`
     
@@ -37,6 +37,7 @@ function Navbar() {
         maxHeight: isOpen ? '300px' : '40px',
         overflow: 'hidden',
         transition: 'max-height 0.3s ease-in-out',
+        
     };
 
     const burgerStyles = {
@@ -67,9 +68,9 @@ function Navbar() {
                     <div className='flex-auto font-signikaBold'><Link to="/about" className={textStyles}>A propos</Link></div>
                     <div className='flex-auto font-signikaBold'><Link to="/contact" className={textStyles}>Contact</Link></div>
                 </div>
-                <div>
-                    <div className='md:hidden lg:hidden xl:hidden ' style={menuStyles}>
-                        <div className='text-3xl font-skyvision  block py-2 text-center text-amber-400 '><h1>SkyVision</h1></div>
+                <div className=' '>
+                    <div className=' md:hidden lg:hidden xl:hidden w-full ' style={menuStyles}>
+                        <div className='text-3xl font-skyvision   block py-2 text-center text-amber-400 '><h1>SkyVision</h1></div>
                         <Link to="/" className=' block py-2 text-center text-amber-200'>Home</Link>
                         <Link to="/tools" className='block py-2  text-center text-amber-200'>Le matériel</Link>
                         <Link to= "/services" className='block py-2 text-center text-amber-200'>Services</Link>
