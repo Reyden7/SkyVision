@@ -9,6 +9,8 @@
         "@testing-library/jest-dom": "6.1.4",
         "@testing-library/react": "14.0.0",
         "@testing-library/user-event": "14.5.1",
+        "animejs": "^3.2.1",
+        "aos": "^3.0.0-beta.6",
         "autoprefixer": "^10.4.16",
         "hamburger-react": "^2.5.0",
         "node-fetch": "^3.3.2",

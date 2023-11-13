@@ -10,6 +10,8 @@ import Tools from './Tools';
 import Services from './Services';
 import DetailPage from './components/Prestations/detailsPage';
 
+import anime from 'animejs/lib/anime.es.js';
+
 
 
 
