@@ -31,7 +31,7 @@ export default function Home (){
         <Navbare />
       </div>
       <div className="container absolute  text-shadow-lg shadow-black 2xl:left-1/2 transform 2xl:-translate-x-full   md:w-2/5 md:text-sm 2xl:-translate-y-40 md:translate-y-8 bg-neutral-800 bg-opacity-30 md:mt-0 lg:mt-10 2xl:w-auto 2xl:pl-20 2xl:pr-20 z-10 xl:mt-10  hidden md:block 2xl:block xl:block 2xl:mt-56 3xl:mt-72 p-4 rounded-md">
-        <div  style={{ animation: 'spin 2s linear infinite' }} className="font-signikaBold md:text-3xl lg:text-6xl xl:text-7xl 2xl:text-9xl 3xl:text-9xl z-20 text-neutral-100  "><img src={svglogo}/></div>
+        <div  className="font-signikaBold md:text-3xl lg:text-6xl xl:text-7xl 2xl:text-9xl 3xl:text-9xl z-20 text-neutral-100  ">Skyvision</div>
         <div className="font-signikaLight md:text-md lg:text-lg md:mt-5 lg:mt-5 xl:text-2xl 2xl:mt-20  2xl:text-2xl 3xl:text-3xl z-20 text-neutral-100 ">La société de prise de vue bourguignonne. Spécialisés dans la captation aérienne de qualité, nous couvrons des événements, des manifestations et réalisons des films aériens.  </div>
         <div className="font-signikaLight md:text-md lg:text-lg md:mt-2 lg:mt-5 xl:text-2xl 2xl:mt-5 2xl:text-2xl 3xl:text-3xl z-20 text-neutral-100 ">De plus, nous offrons des services de montage vidéo pour donner vie à vos images aériennes.</div>
         <div className="font-signikaLight md:text-md lg:text-lg md:mt-2 lg:mt-5 xl:text-2xl 2xl:mt-20 2xl:text-2xl 3xl:text-3xl z-20 text-neutral-100  italic">"Transformez vos idées en réalité visuelle avec SkyVision."</div>

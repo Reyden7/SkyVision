@@ -3,7 +3,8 @@ import './navbar.css';
 import { Link } from 'react-router-dom';
 import Hamburger from 'hamburger-react';
 import logo from '../../img/skyvisionlogo.jpg'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function Navbar() {
     const [isOpen, setOpen] = useState(false);
     const [scrolling, setScrolling] = useState(false);
@@ -18,6 +19,10 @@ function Navbar() {
     };
 
     useEffect(() => {
+        AOS.init();
+      }, []);
+
+    useEffect(() => {
         // Ajouter un écouteur d'événement de scroll lorsque le composant est monté
         window.addEventListener('scroll', handleScroll);
 
@@ -27,8 +32,8 @@ function Navbar() {
         };
     }, []);
 
-    const navbarClass = `bg-${window.innerWidth >= 640 ? (scrolling ? 'neutral-800' : 'neutral-800 opacity-80 ') : 'neutral-800 '} color p-4 w-full flex items-center justify-center font-quicksand shadow-lg shadow-black  ${
-        window.innerWidth >= 640 ? (scrolling ? 'sm:fixed sm:top-0 sm:z-10 lg:fixed lg:top-0 lg xl:fixed xl:top-0 xl:z-10:z-10 bg-neutral-800 sm:bg-neutral-800 transition-all duration-300 ease-in-out' : 'transition-all duration-300 ease-in-out') : ''
+    const navbarClass = `bg-${window.innerWidth >= 640 ? (scrolling ? 'neutral-800' : 'neutral-800 opacity-80 ') : 'neutral-800 '} color p-4 w-full flex items-center justify-center font-quicksand shadow-lg shadow-black ${
+        window.innerWidth >= 640 ? (scrolling ? 'sm:fixed sm:top-0 sm:z-10 lg:fixed lg:top-0 lg xl:fixed xl:top-0 xl:z-10:z-10 bg-neutral-800 sm:bg-neutral-800 shadow-lg shadow-black transition-all duration-300 ease-in-out' : 'transition-all duration-300 ease-in-out') : ''
     };`
     
     
@@ -36,7 +41,7 @@ function Navbar() {
     const menuStyles = {
         maxHeight: isOpen ? '300px' : '40px',
         overflow: 'hidden',
-        transition: 'max-height 0.3s ease-in-out',
+        transition: 'max-height 1s ease-in-out',
         
     };
 
@@ -51,30 +56,30 @@ function Navbar() {
 
     return (
         <nav className={navbarClass}> 
-            <div className='container w-full flex justify-center'>
-                <div className='md:hidden lg:hidden xl:hidden' style={burgerStyles}>
+            <div className='container w-full flex justify-center '>
+                <div className='md:hidden lg:hidden xl:hidden ' style={burgerStyles}>
                     <Hamburger color="#EEB42C" easing="ease-in" toggled={isOpen} toggle={setOpen} />
                 </div>
 
                 {/* Logo à gauche de la navbar */}
-                <div className=' text-shadow-lg shadow-black font-skyvision text-amber-400 md:text-2xl xl:text-2xl lg:ml-20 xl:ml-56  op flex items-center sm:block hidden'>
+                <div data-aos="zoom-in" className=' text-shadow-lg shadow-black font-skyvision text-amber-400 md:text-2xl xl:text-2xl lg:ml-20 xl:ml-56  op flex items-center sm:block hidden'>
                     <h1>SkyVision</h1>
                 </div>
 
                 <div className='hidden  sm:flex flex lg:space-x-8 md:space-x-2 lg:space-x-8 xl:space-x-8 2xl:space-x-20 xl:mr-20  ml-auto mr-0  '>
-                    <div className='flex-auto font-signikaBold  '><Link to="/" className={textStyles}>Home</Link></div>
-                    <div className='flex-auto font-signikaBold'><Link to="/tools" className={textStyles}>Le matériel</Link></div>
-                    <div className='flex-auto font-signikaBold'><Link to="/services" className={textStyles}>Services</Link></div>
-                    <div className='flex-auto font-signikaBold'><Link to="/about" className={textStyles}>A propos</Link></div>
-                    <div className='flex-auto font-signikaBold'><Link to="/contact" className={textStyles}>Contact</Link></div>
+                    <div data-aos="zoom-in" className='flex-auto font-signikaBold  '><Link to="/" className={textStyles}>Home</Link></div>
+                    <div data-aos="zoom-in" className='flex-auto font-signikaBold'><Link to="/tools" className={textStyles}>Le matériel</Link></div>
+                    <div data-aos="zoom-in" className='flex-auto font-signikaBold'><Link to="/services" className={textStyles}>Services</Link></div>
+                    <div data-aos="zoom-in" className='flex-auto font-signikaBold'><Link to="/about" className={textStyles}>A propos</Link></div>
+                    <div data-aos="zoom-in" className='flex-auto font-signikaBold'><Link to="/contact" className={textStyles}>Contact</Link></div>
                 </div>
                 <div className=' '>
-                    <div className=' md:hidden lg:hidden xl:hidden w-full ' style={menuStyles}>
+                    <div  className=' md:hidden lg:hidden xl:hidden w-full ' style={menuStyles}>
                         <div className='text-3xl font-skyvision   block py-2 text-center text-amber-400 '><h1>SkyVision</h1></div>
                         <Link to="/" className=' block py-2 text-center text-amber-200'>Home</Link>
-                        <Link to="/tools" className='block py-2  text-center text-amber-200'>Le matériel</Link>
+                        <Link to="/tools" className='block py-2  text-center text-amber-100'>Le matériel</Link>
                         <Link to= "/services" className='block py-2 text-center text-amber-200'>Services</Link>
-                        <Link to="/about" className=' block py-2 text-center text-amber-200'>A propos</Link>
+                        <Link to="/about" className=' block py-2 text-center text-amber-100'>A propos</Link>
                         <Link to="/contact" className=' block py-2 text-center text-amber-200'>Contact</Link>
                     </div>
                 </div>

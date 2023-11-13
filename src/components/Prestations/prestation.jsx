@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './prestations.css';
 import { Link } from 'react-router-dom';
 import Card from '../Prestations/card/card';
@@ -8,6 +8,8 @@ import img3 from '../../img/s3.jpg';
 import img4 from '../../img/s4.jpg';
 import img5 from '../../img/s5.jpg';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 
 function Prestations() {
@@ -45,13 +47,17 @@ function Prestations() {
     // Ajoutez plus de données de carte ici
   ];
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className=''>
+    <div  className=''>
       <div className='text-center text-neutral-800 text-5xl lg:text-6xl font-signikaSemiBold 3xl:text-9xl text-shadow-sm shadow-black'>Nos prestations</div>
       <div className='mt-8 text-center text-neutral-500 text-md md:text-md lg:text-lg lg:text-xl xl:text-xl  font-signikaSemiBold italic'>Que ce soit de la réalisation basique à avancée, en passant par la postProduction notre équipe le fera avec passion</div>
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-4 md:gap-4 lg:gap-2 xl:gap-8 ml-2 mr-5 mt-16">
-        {cardsData.map((card) => (
-          <div key={card.id}>
+      <div  className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-4 md:gap-4 lg:gap-2 xl:gap-8 ml-2 mr-5 mt-16">
+        {cardsData.map((card, index) => (
+          <div key={card.id} data-aos="fade-up" data-aos-delay={index * 100}>
             <Link to={`/detailsPage/${card.id}`}></Link>
             <Card {...card} />
           </div>
