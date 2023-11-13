@@ -5,6 +5,7 @@ import Footer from '../bandeau/bandeau';
 import img1 from '../../img/drone.png';
 import img2 from '../../img/pilote.png';
 import '../Prestations/detailsPage.css'
+import bg from '../../img/bg.jpg'
 
 const DetailPage = () => {
   const { id } = useParams();
@@ -43,9 +44,9 @@ const DetailPage = () => {
 const element = elements.find((elem) => elem.id === id);
 
   return (
-    <div className=""> 
+    <div className="h-screen "> 
         <Navbar/>
-        <div className='absolute transform -scale-50 scale-y-50 2xl:-scale-x-50 2xl:scale-y-50  2xl:w-2xl w-xl left-0 2xl:-mt-20 2xl:-ml-72 -ml-20 mt-10 w-60  '><img className='image-container 2xl:w-full w-96' src={img1}/></div>
+        <div className='absolute transform -scale-50 scale-y-50 2xl:-scale-x-100 2xl:scale-y-100  2xl:w-2xl w-xl left-0 2xl:mt-20 2xl:left-12 -ml-20 mt-10 w-60  '><img className='image-container 2xl:w-full w-96' src={img1}/></div>
         <div className=' w-full mt-10  '>
           <div className='font-signikaLight   2xl:w-1/2  md:pl-10 md:pr-10  2xl:mt-32 2xl:ml-96 text-center md:text-justify text h-auto  '>
               <div className='font-signikaRegular text-neutral-800  text-2xl 2xl:text-3xl '>{element ? element.titre : 'Élément non trouvé'}</div>
@@ -58,8 +59,8 @@ const element = elements.find((elem) => elem.id === id);
               </a></div>
           </div>
         </div>
-        <div className='absolute transform scale-50 -scale-x-50 md:scale-100 md:-scale-x-100 lg:scale-100 lg:-scale-x-100  w-2xl bottom-0 right-0'>
-            <img src={img2} className='w-96' />
+        <div className='absolute transform scale-50 -scale-x-50 md:scale-100 md:-scale-x-100 lg:scale-100 lg:-scale-x-100  w-2xl bottom-0 right-0 '>
+            <img src={img2} className='w-96 ' />
         </div>
 
         <div className='fixed bottom-0 w-full text-center'><Footer/></div>

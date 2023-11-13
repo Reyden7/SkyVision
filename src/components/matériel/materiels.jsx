@@ -9,9 +9,9 @@ import img4 from '../../img/djifpv.png';
 function Materiels() {
   return (
     <div>
-      <div className='text-center mt-32 text-neutral-800 text-5xl lg:text-6xl font-signikaSemiBold'>Notre matériel</div>
+      <div className='text-center mt-32 text-neutral-800 text-5xl lg:text-6xl font-signikaSemiBold text-shadow-sm shadow-black'>Notre matériel</div>
       <div className='text-center mt-6 mb-12 text-neutral-800 text-2xl lg:text-2xl font-signikaSemiBold'>
-        <a href="/tools" className="bg-neutral-800 text-amber-400 font-signikaSemiBold  px-4 py-4 rounded-full hover:bg-neutral-900 hover:text-amber-500 transition duration-300 ease-in-out">
+        <a href="/tools" className="bg-neutral-800 text-amber-400 hover:text-neutral-800 font-signikaSemiBold px-4 py-2 rounded-full bg-gradient-to-r from-neutral-800 to-neutral-500 hover:from-amber-400 hover:to-yellow-200 focus:ring-4 focus:ring-neutral-800 transition duration-300 ease-in-out">
             En savoir plus
         </a>
     </div>
