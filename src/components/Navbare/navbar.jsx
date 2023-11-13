@@ -5,12 +5,13 @@ import Hamburger from 'hamburger-react';
 import logo from '../../img/skyvisionlogo.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 function Navbar() {
     const [isOpen, setOpen] = useState(false);
     const [scrolling, setScrolling] = useState(false);
 
-     // Fonction pour gérer le scroll
-     const handleScroll = () => {
+    // Fonction pour gérer le scroll
+    const handleScroll = () => {
         if (window.scrollY > 0) {
             setScrolling(true);
         } else {
@@ -20,7 +21,7 @@ function Navbar() {
 
     useEffect(() => {
         AOS.init();
-      }, []);
+    }, []);
 
     useEffect(() => {
         // Ajouter un écouteur d'événement de scroll lorsque le composant est monté
@@ -35,14 +36,11 @@ function Navbar() {
     const navbarClass = `bg-${window.innerWidth >= 640 ? (scrolling ? 'neutral-800' : 'neutral-800 opacity-80 ') : 'neutral-800 '} color p-4 w-full flex items-center justify-center font-quicksand shadow-lg shadow-black ${
         window.innerWidth >= 640 ? (scrolling ? 'sm:fixed sm:top-0 sm:z-10 lg:fixed lg:top-0 lg xl:fixed xl:top-0 xl:z-10:z-10 bg-neutral-800 sm:bg-neutral-800 shadow-lg shadow-black transition-all duration-300 ease-in-out' : 'transition-all duration-300 ease-in-out') : ''
     };`
-    
-    
-    
+
     const menuStyles = {
         maxHeight: isOpen ? '300px' : '40px',
         overflow: 'hidden',
         transition: 'max-height 1s ease-in-out',
-        
     };
 
     const burgerStyles = {
@@ -53,9 +51,8 @@ function Navbar() {
 
     const textStyles = ` md:text-sm xl:text-xl 2xl:text-xl 3xl:text-xl text-shadow-lg shadow-black  ${scrolling ? 'text-white' : 'text-white'} text-center md:hover:text-amber-400 border hover:border-amber-400 border-transparent border-0 hover:border-t-2 hover:border-b-2 p-4 transition duration-300`;
 
-
     return (
-        <nav className={navbarClass}> 
+        <nav className={navbarClass}>
             <div className='container w-full flex justify-center '>
                 <div className='md:hidden lg:hidden xl:hidden ' style={burgerStyles}>
                     <Hamburger color="#EEB42C" easing="ease-in" toggled={isOpen} toggle={setOpen} />
