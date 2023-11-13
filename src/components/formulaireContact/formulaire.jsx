@@ -3,7 +3,7 @@ import './formulaire.css';
 import ReCAPTCHA from 'react-google-recaptcha';
 import emailjs from '@emailjs/browser';
 import img from '../../img/djifpv.png';
-import Footer from '../bandeau/bandeau';
+
 import './formulaire.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -62,10 +62,10 @@ function Formulaire() {
   };
 
   return (
-    <div className="bg-neutral-900 text-neutral-100 container pb-96 ">
+    <div className="bg-neutral-900 text-neutral-100  pb-96 w-full ">
       <div className="flex flex-col 2xl:flex-row lg:flex-row  justify-center  ">
         {/* Partie texte */}
-        <div className="lg:w-1/2 2xl:w-1/2 md:w-1/2 xl:w-1/2  z-10">
+        <div className="lg:w-1/2 2xl:w-1/2 w-full md:w-1/2 xl:w-1/2  z-10">
           <h2 className=" pl-10 text-2xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-signikaSemiBold mt-20">
             Notre travail vous intéresse ?
           </h2>
@@ -76,7 +76,7 @@ function Formulaire() {
         </div>
         {/* Partie formulaire */}
         <img className='absolute 2xl:mt-28 lg:mt-28 md:ml-40 md:-mt-40  2xl:ml-12 z-1 transform 3xl:scale-150 2xl:scale-150 md:scale-125 lg:scale-150' src={img} alt="Dji fpv" />
-        <div className="2xl:w-1/2 lg:w-full lg:mr-10  3xl:w-1/2 md:w-full 2xl:ml-10 2xl:mr-10 3xl:mt-52 mt-4 z-0 3xl:-ml-96 px-5">
+        <div className="2xl:w-1/2 lg:w-full lg:mr-10 w-full 3xl:w-1/2 md:w-full 2xl:ml-10 2xl:mr-10 3xl:mt-52 mt-4 z-0 3xl:-ml-96 px-5">
           <div className="bg-neutral-800 bg-opacity-80 p-8 rounded-md  shadow-md mt-10 2xl:mt-48 lg:mt-48  z-1 formulaire-card">
             <form onSubmit={handleFormSubmit}>
               <div className="grid  grid-cols-2 gap-4 font-signikaSemiBold">
@@ -132,7 +132,7 @@ function Formulaire() {
           </div>
         </div>
       </div><ToastContainer />
-      <div className=' w-full fixed  bottom-0 text-center'><Footer/></div>
+     
     </div>
   );
 }
