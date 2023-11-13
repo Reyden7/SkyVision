@@ -46,19 +46,19 @@ const element = elements.find((elem) => elem.id === id);
     <div>
         <Navbar/>
         <div className='absolute transform -scale-50 scale-y-50 2xl:-scale-x-50 2xl:scale-y-50  2xl:w-2xl w-xl left-0 2xl:-mt-20 2xl:-ml-72 -ml-20 mt-10 w-60  '><img className='image-container 2xl:w-full w-96' src={img1}/></div>
-        <div className='container w-full'>
-          <div className='font-signikaLight pl-10 pr-10 2xl:w-1/2  md:pl-10 md:pr-10  2xl:mt-32 2xl:ml-96 transform 2xl:translate-x-12 text-justify h-auto  '>
-              <div className='font-signikaRegular text-neutral-800 text-center  p-5 text-2xl 2xl:text-3xl '>{element ? element.titre : 'Élément non trouvé'}</div>
-              <hr className='m-5  border-2 rounded-full'></hr>
-              <div className='font-signikaSemiBold text-neutral-800 transform 2xl:translate-x-12 pl-2 2xl:text-xl'>Description de la prestation</div>
-              <div className='font-signikaLight text-neutral-800 transform 2xl:translate-x-12 p-2 '>{element ? element.Description : 'Element non trouvé'}</div>
-              <div className=' 2xl:mt-5 mt-10 2xl:mb-10 md:mt-10 text-center'>
+        <div className=' w-full mt-10  '>
+          <div className='font-signikaLight   2xl:w-1/2  md:pl-10 md:pr-10  2xl:mt-32 2xl:ml-96 text-center md:text-justify text h-auto  '>
+              <div className='font-signikaRegular text-neutral-800  text-2xl 2xl:text-3xl '>{element ? element.titre : 'Élément non trouvé'}</div>
+              <hr className=' mt-5 border-2 rounded-full'></hr>
+              <div className='mt-2 font-signikaSemiBold text-neutral-800 '>Description de la prestation</div>
+              <div className='font-signikaLight text-neutral-800 text-justify px-5 md:px-0 '>{element ? element.Description : 'Element non trouvé'}</div>
+              <div className='mt-10 text-center '>
                   <a href="/contact" className="bg-neutral-800  text-amber-400 font-signikaSemiBold px-4 py-2 rounded-full hover:bg-neutral-900 hover:text-amber-500 transition duration-300 ease-in-out">
               Nous contacter
               </a></div>
           </div>
         </div>
-        <div className='absolute right-0 transform scale-100 -scale-x-100  w-2xl'>
+        <div className='absolute right-0 transform scale-100 -scale-x-100  w-2xl bottom-0'>
             <img src={img2} className='w-96' />
         </div>
 
