@@ -14,13 +14,13 @@ const DetailPage = () => {
       id: '1',
       titre: "Réalisation basique",
       Prix: 100,
-      Description: "Confiez-nous la réalisation d'images ou de vidéos aériennes de qualité professionnelle pour vos projets. Ce format vous propose des vidéos brutes, sans artifices ni effets spéciaux, offrant ainsi une flexibilité totale pour personnaliser la post-production selon votre vision créative."
+      Description: "Confiez-nous la réalisation d'images ou de vidéos aériennes de qualité professionnelle pour vos projets. Ce format cette prestation  propose des vidéos brutes, sans artifices ni effets spéciaux, offrant ainsi une flexibilité totale pour personnaliser la post-production selon votre vision créative."
     },
     {
       id: '2',
       titre: "Réalisation avancée",
       Prix: 400,
-      Description: "Nos compétences de pilotes FPV professionnels sont à votre disposition pour des prises de vue aériennes avancées. Nous excellons dans la réalisation de figures impressionnantes et la capture de scènes dynamiques pour vos projets. Cette offre vous propose des images brutes de haute qualité, vous laissant la liberté de personnaliser la post-production selon vos besoins créatifs."
+      Description: "Nos compétences de pilotes FPV professionnels sont à votre disposition pour des prises de vues aériennes avancées. Nous excellons dans la réalisation de plan impressionnants et la capture de scènes dynamiques pour vos projets. Cette offre vous propose des images brutes de haute qualité, vous laissant la liberté de personnaliser la post-production selon vos besoins créatifs."
     },
     {
       id: '3',
@@ -32,7 +32,7 @@ const DetailPage = () => {
       id: '4',
       titre: "Réalisation avancée + PostProduction",
       Prix: 400,
-      Description: "Confiez-nous la réalisation d'images ou de vidéos aériennes de qualité professionnelle pour vos projets. Que ce soit en utilisant des drones FPV pour des prises de vue dynamiques ou des drones stabilisés pour des plans fluides, notre équipe vous offre une prise en charge complète de la post-production, garantissant ainsi des résultats exceptionnels pour vos projets."
+      Description: "Confiez-nous la réalisation d'images ou de vidéos aériennes de qualité professionnelle pour vos projets. Que ce soit en utilisant des drones FPV pour des prises de vues dynamiques ou des drones stabilisés pour des plans fluides. Notre équipe vous offre assurera une prise en charge complète de la post-production, garantissant ainsi des résultats exceptionnels pour vos projets."
     },
     {
       id: '5',

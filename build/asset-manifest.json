@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.a1572962.css",
-    "main.js": "/static/js/main.5d9be940.js",
+    "main.css": "/static/css/main.de3b008d.css",
+    "main.js": "/static/js/main.d3f69d9f.js",
     "static/media/videoSite.mp4": "/static/media/videoSite.a539c8c50683889a22c6.mp4",
     "static/media/pilote.png": "/static/media/pilote.4911fa0c486fc844ef0b.png",
+    "static/media/bg.jpg": "/static/media/bg.8e136281d80af7ec50f2.jpg",
     "static/media/s2.jpg": "/static/media/s2.2c8b6b242e10edee86c8.jpg",
     "static/media/Signika-Bold.ttf": "/static/media/Signika-Bold.b9e6dcdf88ccce13b4aa.ttf",
     "static/media/Signika-SemiBold.ttf": "/static/media/Signika-SemiBold.30a0b1c74fe0f02dba5d.ttf",
@@ -22,12 +23,13 @@
     "static/media/skyvisionlogo.jpg": "/static/media/skyvisionlogo.ce95b02208eac8cfc308.jpg",
     "static/media/fpv.jpg": "/static/media/fpv.06d0d40db9c037924d79.jpg",
     "static/media/mavic-2-pro-12.jpg": "/static/media/mavic-2-pro-12.cab0c764bd95420e12d1.jpg",
+    "static/media/SkyVision.svg": "/static/media/SkyVision.4c31941bc95b46b07adab77c688e2189.svg",
     "index.html": "/index.html",
-    "main.a1572962.css.map": "/static/css/main.a1572962.css.map",
-    "main.5d9be940.js.map": "/static/js/main.5d9be940.js.map"
+    "main.de3b008d.css.map": "/static/css/main.de3b008d.css.map",
+    "main.d3f69d9f.js.map": "/static/js/main.d3f69d9f.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1572962.css",
-    "static/js/main.5d9be940.js"
+    "static/css/main.de3b008d.css",
+    "static/js/main.d3f69d9f.js"
   ]
 }
