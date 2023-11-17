@@ -5,8 +5,7 @@ import './Home.css';
 import Prestations from './components/Prestations/prestation';
 import Materiel from './components/matériel/materiels';
 import Footer from './components/bandeau/bandeau';
-import anime from 'animejs/lib/anime.es.js';
-import svglogo from '../src/svg/SkyVision.svg';
+import Mission from './components/Prestations/Missions';
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
@@ -68,6 +67,9 @@ export default function Home() {
       <div className="3xl:mt-40 3xl:block  hidden  ">test</div>
       <div className=" md:mt-20 lg:mt-20 xl:mt-20 2xl:mt-20 3xl:mt-10 mt-14   ">
         <Prestations />
+      </div>
+      <div className="lg:mt-40 2xl:mt-0">
+        <Mission/>
       </div>
       <div className="lg:mt-40 2xl:mt-0">
         <Materiel />
