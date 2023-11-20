@@ -44,7 +44,7 @@ export default function Services (){
         <img className="w-full rounded-3xl 2xl:-mt-20 transform scale-125 shadow-2xl shadow-black image-container  " src={img2} />
         <div className="mt-8 text-center text-amber-400 2xl:text-5xl md:text-5xl font-signikaBold 2xl:pt-5 text-xl">Les drones FPV</div>
         <div className="mt-8 text-center text-neutral-200 2xl:text-4xl md:text-2xl lg:text-lg  text-xs xl:text-xl pb-5 font-signikaLight "> À la différence des drones stabilisés, les drones FPV sont moins connus. Ils offrent une approche distincte de la réalisation vidéo, apportant davantage de dynamisme aux images. </div>
-        <div className="mt-2 text-center text-neutral-200 2xl:text-4xl md:text-2xl lg:text-lg  text-xs xl:text-xl pb-5 font-signikaLight ">  Cepedant leur utilisation est de plus en plus répandue à Hollywood, notamment lorsqu'il s'agit de filmer des courses-poursuites. </div>
+        <div className="mt-2 text-center text-neutral-200 2xl:text-4xl md:text-2xl lg:text-lg  text-xs xl:text-xl pb-5 font-signikaLight ">  Cependant leur utilisation est de plus en plus répandue à Hollywood, notamment lorsqu'il s'agit de filmer des courses-poursuites. </div>
       </div>
     </div>
     </div>
