@@ -5,6 +5,7 @@ import img1 from './img/mavic-2-pro-12.jpg'
 import img2 from './img/fpv.jpg'
 import './Service.css'
 import Footer from "./components/bandeau/bandeau";
+import Grille from './components/grilleDeplacement';
 
 export default function Services (){
 
@@ -32,18 +33,18 @@ export default function Services (){
     <div className=" mt-20 md:mt-20 lg:mt-40 2xl:mt-40 3xl:mt-40  "><Prestations/></div>
     <hr className="border-t-2 mt-16 sm:ml-96 sm:mr-96 mr-24 ml-24 border-neutral-500 my-2 " />
     <div className="mt-20 md:mt-10 lg:mt-20 xl:mt-24 2xl:mt-24 3xl:mt-24  ">
-    <div className=" mt-40 mx-2">
-    <div className="container 2xl:-mt-56  3xl:mt-96  space-x-5 2xl:w-full 3xl:w-full 2xl:h-screen 3xl:h-auto mx-auto   md:w-full md:mx-auto md:p-2  flex 2xl:space-x-96 md:space-x-20 scale-125   justify-center transform 2xl:scale-50 3xl:scale-100 3xl:space-x-40 ">
-      <div className="md:w-2/5 2xl:w-2/5 3xl:4/5   h-full w-1/2  2xl:pl-20 2xl:pr-20 pl-5 pr-5 3xl:py-24  bg-neutral-800 rounded-3xl bgAnim-container shadow-2xl shadow-black  "> 
-        <img className="w-full rounded-3xl 2xl:-mt-20 transform  shadow-2xl shadow-black image-container  " src={img1} />
+    <div className=" container mt-40 mx-auto">
+    <div className=" 2xl:-mt-56  3xl:mt-96  space-x-5 2xl:w-full 3xl:w-full  3xl:h-auto md:w-full md:mx-auto md:p-2  flex 2xl:space-x-96 md:space-x-20   justify-center transform 2xl:scale-50 3xl:scale-100 3xl:space-x-40 ">
+      <div className="md:w-2/5 2xl:w-2/5 3xl:4/5  h-full  pb-5 w-1/2  2xl:pl-20 2xl:pr-20 px-4  2xl:py-24  3xl:py-24  bg-neutral-800 rounded-3xl bgAnim-container shadow-2xl shadow-black  "> 
+        <img className="w-full rounded-3xl 2xl:-mt-20 transform scale-125 shadow-2xl shadow-black image-container  " src={img1} />
         <div className=" mt-8 text-center text-amber-400  md:text-5xl 2xl:text-5xl text-xl font-signikaBold 2xl:pt-5">Les drones stabilisé</div>
-        <div className="mt-8 text-center text-neutral-200 2xl:text-4xl md:text-2xl text-xs lg:text-lg xl:text-xl font-signikaLight  ">Envie de plan continu, linéaire, en marche avant ou arrière ? Alors choisisez les drones stabilisé</div>
-        <div className=" text-center text-neutral-200 2xl:text-4xl mt-2 md:text-2xl text-xs lg:text-lg xl:text-xl pb-5 2xl:mt-5 font-signikaLight ">Les drones stabilisés redéfinissent la capture aérienne en offrant une stabilité inégalable et une qualité d'image exceptionnelle.</div>
+        <div className="mt-8 text-center text-neutral-200 2xl:text-4xl md:text-2xl text-xs lg:text-lg xl:text-xl font-signikaLight  ">Connus du grand public, les drones stabilisés sont idéaux pour obtenir des plans rectilignes fluides.</div>
       </div>
-      <div className="md:w-2/5 2xl:mb-36 mb-20 2xl:w-2/5 w-1/2  pl-5 pr-5 2xl:mt-20 2xl:pl-20 2xl:pr-20   bg-neutral-800 rounded-3xl bgAnim-container shadow-2xl shadow-black ">
-        <img className="w-full rounded-3xl 2xl:-mt-20  shadow-2xl shadow-black image-container  " src={img2} />
+      <div className="md:w-2/5 2xl:mb-36 mb-20 2xl:w-2/5 w-1/2  px-4  2xl:pl-20 2xl:pr-20 2xl:pb-5  bg-neutral-800 rounded-3xl bgAnim-container shadow-2xl shadow-black ">
+        <img className="w-full rounded-3xl 2xl:-mt-20 transform scale-125 shadow-2xl shadow-black image-container  " src={img2} />
         <div className="mt-8 text-center text-amber-400 2xl:text-5xl md:text-5xl font-signikaBold 2xl:pt-5 text-xl">Les drones FPV</div>
-        <div className="mt-8 text-center text-neutral-200 2xl:text-4xl md:text-2xl lg:text-lg  text-xs xl:text-xl pb-5 font-signikaLight ">Nos vidéos FPV offrent une expérience immersive et dynamique, capturent des séquences plus engageantes et créent des prises de vue dynamiques et uniques, surpassant les vidéos stabilisées traditionnelles.</div>
+        <div className="mt-8 text-center text-neutral-200 2xl:text-4xl md:text-2xl lg:text-lg  text-xs xl:text-xl pb-5 font-signikaLight "> À la différence des drones stabilisés, les drones FPV sont moins connus. Ils offrent une approche distincte de la réalisation vidéo, apportant davantage de dynamisme aux images. </div>
+        <div className="mt-2 text-center text-neutral-200 2xl:text-4xl md:text-2xl lg:text-lg  text-xs xl:text-xl pb-5 font-signikaLight ">  Cepedant leur utilisation est de plus en plus répandue à Hollywood, notamment lorsqu'il s'agit de filmer des courses-poursuites. </div>
       </div>
     </div>
     </div>
@@ -57,11 +58,15 @@ export default function Services (){
         <h1 className="mt-16 text-center text-neutral-800 text-2xl md:text-4xl font-signikaSemiBold">Comment sont calculés nos tarifs ?</h1>
         <div className=" mt-5 text-neutral-800 text-center text-xl md:text-3xl  font-signikaSemiBold ">
         Les tarifs sont définis par 4 éléments  : 
-          <div className="mt-5 text-amber-700 text-justify-center text-xl md:text-2xl  font-signikaSemiBold ">
+          <div className="p-5 mt-5 text-center text-amber-700  text-xl md:text-2xl  font-signikaSemiBold ">
             <div>- Le coût du matériel utilisé</div>
             <div>- Le temps de réalisation</div>
             <div>- La compléxité de la réalisation</div>
-            <div>- Les frais de déplacement </div>
+            <div>- Les frais de déplacement (voir grille forfaitaire) </div>
+          </div>
+          <div>
+          <h1 className="p-5 mt-16 text-center text-neutral-800 text-2xl md:text-4xl font-signikaSemiBold">Grille forfaitaire coût de déplacement</h1>
+            <Grille/>
           </div>
           
         </div>

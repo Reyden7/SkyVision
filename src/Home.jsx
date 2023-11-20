@@ -32,7 +32,7 @@ export default function Home() {
           Société de prises de vues bourguignonne, spécialisée dans la captation aérienne de qualité, nous couvrons des évènements, des manifestations et réalisons des films aériens.
         </div>
         <div className="font-signikaLight md:text-md lg:text-lg md:mt-2 lg:mt-5 xl:text-2xl 2xl:mt-5 2xl:text-2xl 3xl:text-3xl z-20 text-neutral-100 ">
-          De plus, nous offrons des services de montage vidéo pour donner vie à vos images aériennes.
+          De plus, nous proposons des services de montage vidéo.
         </div>
         <div className="font-signikaLight md:text-md lg:text-lg md:mt-2 lg:mt-5 xl:text-2xl 2xl:mt-20 2xl:text-2xl 3xl:text-3xl z-20 text-neutral-100  italic">
           "Transformez vos idées en réalité visuelle avec SkyVision."
@@ -61,7 +61,7 @@ export default function Home() {
       </div>
 
       <div className="sm:hidden block font-signikaRegular text-2xl pl-14 pr-14 mt-14  text-center  ">
-        <b>Skyvision</b>Société de prise de vue aérienne{" "}
+        <b>Skyvision</b> Société de prise de vue aérienne{" "}
       </div>
       <div className="sm:hidden block font-signikaLight text-xl mt-5  text-center italic "> "Transformez vos idées en réalité visuelle avec SkyVision" </div>
       <div className="3xl:mt-40 3xl:block  hidden  ">test</div>
