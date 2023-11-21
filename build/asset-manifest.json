@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b123a38c.css",
-    "main.js": "/static/js/main.f530ec6e.js",
+    "main.js": "/static/js/main.ac34f6b3.js",
     "static/media/videoSite.mp4": "/static/media/videoSite.a539c8c50683889a22c6.mp4",
     "static/media/pilote.png": "/static/media/pilote.4911fa0c486fc844ef0b.png",
     "static/media/bg.jpg": "/static/media/bg.8e136281d80af7ec50f2.jpg",
@@ -30,10 +30,10 @@
     "static/media/mavic-2-pro-12.jpg": "/static/media/mavic-2-pro-12.cab0c764bd95420e12d1.jpg",
     "index.html": "/index.html",
     "main.b123a38c.css.map": "/static/css/main.b123a38c.css.map",
-    "main.f530ec6e.js.map": "/static/js/main.f530ec6e.js.map"
+    "main.ac34f6b3.js.map": "/static/js/main.ac34f6b3.js.map"
   },
   "entrypoints": [
     "static/css/main.b123a38c.css",
-    "static/js/main.f530ec6e.js"
+    "static/js/main.ac34f6b3.js"
   ]
 }
