@@ -53,9 +53,9 @@ function Prestations() {
   return (
     <div className=''>
       <div className='text-center text-neutral-800 text-5xl lg:text-6xl font-signikaSemiBold 3xl:text-9xl text-shadow-sm shadow-black'>Nos prestations</div>
-      <div className='mt-8 text-center text-neutral-500 text-md md:text-md lg:text-lg lg:text-xl xl:text-xl font-signikaSemiBold italic'>De la réalisation basique à avancée, en passant par la postproduction, notre équipe y travaillera avec passion</div>
-      <div className='mt-8 text-center text-neutral-500 text-md md:text-md lg:text-lg lg:text-xl xl:text-xl font-signikaSemiBold '>Nous nous déplaçons partout en France</div>
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-4 md:gap-4 lg:gap-2 xl:gap-8 ml-2 mr-5 mt-16">
+      <div className='mt-8 text-center text-neutral-500 text-md md:text-md lg:text-lg  xl:text-xl font-signikaSemiBold italic'>De la réalisation basique à avancée, en passant par la postproduction, notre équipe y travaillera avec passion</div>
+      <div className='mt-8 text-center text-neutral-500 text-md md:text-md lg:text-lg  xl:text-xl font-signikaSemiBold '>Nous nous déplaçons partout en France</div>
+      <div className="grid grid-cols-2  md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4  mx-2 md:gap-4 lg:gap-2 xl:gap-8  mt-16">
         {cardsData.map((card, index) => (
           <div key={card.id} data-aos="fade-up" data-aos-delay={index * 100}>
             <Link to={`/detailsPage/${card.id}`}></Link>

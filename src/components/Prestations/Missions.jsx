@@ -15,7 +15,7 @@ function Missions() {
   }, []);
   return (
     <div className='p-7 mt-20 2xl:mt-10 '>
-      <div className='text-center mt-20 text-neutral-800 text-5xl sm:text-6xl m-10 font-signikaSemiBold text-shadow-sm shadow-black'>
+      <div className='text-center mb-10 text-neutral-800 text-5xl sm:text-6xl font-signikaSemiBold text-shadow-sm shadow-black'>
         Pourquoi nous contacter ?
       </div>
       <div className=''></div>
@@ -44,7 +44,7 @@ function Missions() {
           </div>
         </div>
       </div>
-      <div data-aos-duration="2000" data-aos="fade-left" className='mt-10 mx-auto 2xl:hidden lg:hidden block   '>
+      <div data-aos-duration="2000" data-aos="fade-up" className='mt-10 mx-auto 2xl:hidden lg:hidden block   '>
           <div className='text-neutral-800  font-signikaSemiBold 2xl:text-2xl'>
             Nous intervenons pour différents types de mission :
           </div>

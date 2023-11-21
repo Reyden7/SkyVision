@@ -39,7 +39,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="sm:w-full sm:block md:block hidden flex items-center font-signikaLight  sm:-mt-80 justify-center bg-gray-100  ">
+      <div className="hidden md:block flex items-center font-signikaLight  md:-mt-80 justify-center bg-gray-100  ">
         <video
           ref={videoRef}
           className=" w-full h-auto -mt-5 z-1 object-cover inset-0 brightness-50 md:mt-60 lg:mt-60 2xl:mt-52 3xl:-mt-32 hidden 2xl:block md:block lg:block xl:block"
@@ -60,10 +60,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="sm:hidden block font-signikaRegular text-2xl pl-14 pr-14 mt-14  text-center  ">
+      <div className="md:hidden block font-signikaRegular text-2xl pl-14 pr-14 mt-14  text-center  ">
         <b>Skyvision</b> Société de prise de vue aérienne{" "}
       </div>
-      <div className="sm:hidden block font-signikaLight text-xl mt-5  text-center italic "> "Transformez vos idées en réalité visuelle avec SkyVision" </div>
+      <div className="md:hidden block font-signikaLight text-xl mt-5  text-center italic "> "Transformez vos idées en réalité visuelle avec SkyVision" </div>
       <div className="3xl:mt-40 3xl:block  hidden  ">test</div>
       <div className=" md:mt-20 lg:mt-20 xl:mt-20 2xl:mt-20 3xl:mt-10 mt-14   ">
         <Prestations />
