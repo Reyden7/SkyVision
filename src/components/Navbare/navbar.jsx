@@ -59,11 +59,11 @@ function Navbar() {
                 </div>
 
                 {/* Logo à gauche de la navbar */}
-                <div data-aos="zoom-in" className=' text-shadow-lg shadow-black font-skyvision text-amber-400 md:text-2xl xl:text-2xl lg:ml-20 xl:ml-56  op flex items-center sm:block hidden'>
+                <div data-aos="zoom-in" className='responsiveness text-shadow-lg shadow-black font-skyvision text-amber-400 md:text-2xl xl:text-2xl lg:ml-20 xl:ml-56  op flex items-center sm:block hidden'>
                     <h1>SkyVision</h1>
                 </div>
 
-                <div className='hidden  sm:flex flex lg:space-x-8 md:space-x-2 lg:space-x-8 xl:space-x-8 2xl:space-x-20 xl:mr-20  ml-auto mr-0  '>
+                <div className='responsiveness hidden  sm:flex flex lg:space-x-8 md:space-x-2 lg:space-x-8 xl:space-x-8 2xl:space-x-20 xl:mr-20  ml-auto mr-0  '>
                     <div data-aos="zoom-in" className='flex-auto font-signikaBold  '><Link to="/" className={textStyles}>Home</Link></div>
                     <div data-aos="zoom-in" className='flex-auto font-signikaBold'><Link to="/tools" className={textStyles}>Le matériel</Link></div>
                     <div data-aos="zoom-in" className='flex-auto font-signikaBold'><Link to="/services" className={textStyles}>Services</Link></div>
