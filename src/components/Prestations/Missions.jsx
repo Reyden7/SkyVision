@@ -42,6 +42,9 @@ function Missions() {
           <div className='font-signikaLight mt-5 text-neutral-800 2xl:text-xl'>
             - Les réalisations de film pour un évènement public, course de motos, voitures ou même court métrage.
           </div>
+          <div className='font-signikaLight mt-5 text-neutral-800 2xl:text-xl'>
+            - exemple : Film déja réalisé : Rose espoir 2022
+          </div>
         </div>
       </div>
       <div data-aos-duration="2000" data-aos="fade-up" className='mt-10 mx-auto 2xl:hidden lg:hidden block   '>
@@ -57,6 +60,10 @@ function Missions() {
           <div className='font-signikaLight mt-5 text-neutral-800 2xl:text-xl'>
             - Les réalisations de film pour un évènement public, course de motos, voitures ou même court métrage.
           </div>
+          <div className='font-signikaLight mt-5 text-neutral-800 2xl:text-xl'>
+            - exemple : Film déja réalisé : Rose espoir 2022
+          </div>
+          
         </div>
     </div>
   );
